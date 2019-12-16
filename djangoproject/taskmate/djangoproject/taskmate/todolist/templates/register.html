@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+    <h1> User Registration</h1>
+    <div class= "container">
+    <form method ="POST" action = "">
+        {% csrf_token %}
+        <div class = "col-md-5">
+        {{ form.as_p }}
+        </div>
+        <div class="col-md-3">
+        <button class = "btn btm-primary" type="submit"> Submit</button>
+        </div>
+    </form>
+    </div>
+    </body>
+</html>
