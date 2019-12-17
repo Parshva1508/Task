@@ -60,15 +60,4 @@ def pendingtask(request, task_id):
 
     return redirect('todolist')
 
-def contact(request):
-    context = {
-        'contact_text' : "Welcome to Contact page"
-    }
-    return render(request, 'contact.html', context)
-
-def about(request):
-    context = {
-        'about_text' : "Welcome to About page"
-    }
-    return render(request, 'about.html', context)
 

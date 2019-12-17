@@ -21,8 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('task/',include('todolist.urls')),
     path('', todolist_views.index, name='index'),
-    path('contact', todolist_views.contact, name='contact'),
-    path('about', todolist_views.about, name='about'),
     path('todolist', todolist_views.todolist, name='todolist'),
     
     ]
